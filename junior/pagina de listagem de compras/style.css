@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  height: 20pc;
+}
+
+header {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header button {
+  width: 2pc;
+  height: 2pc;
+  background: none;
+  border: none;
+  color: #fff;
+  background-color: red;
+  font-size: 1.2pc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+header button:hover {
+  background-color: #ae0000;
+}
+
+header h1 {
+  text-transform: capitalize;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+main {
+  border: 1px solid;
+  padding: 1pc;
+}
+
+#control {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  gap: 1pc;
+}
+
+#control input {
+  border: 1px solid #c2c2c2;
+  border-radius: 0;
+  font-size: 1pc;
+  padding: 0.9pc 0.7pc;
+
+  /* firefox - Input Style */
+  -moz-appearance: textfield;
+}
+
+#control input::placeholder {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#control button {
+  width: 10pc;
+  height: 88%;
+  border: 1px solid #c2c2c2;
+  border-radius: 0;
+  font-size: 1.5pc;
+}
+
+/* Chrome, Safari, Edge, Opera - Input Style */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Chrome, Safari, Edge, Opera - Input Style */
+
+#list {
+  height: 80%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+  /* firefox - scrollbar Style */
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+  scrollbar-gutter: stable;
+}
+
+/* Chrome, Safari, Edge, Opera - Scrollbar Style */
+#list::-webkit-scrollbar {
+  width: 12px;
+}
+
+#list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#list::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+/* Chrome, Safari, Edge, Opera - scrollbar Style */
+
+.item {
+  font-size: 1.2pc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item .title{
+  width: 13pc;
+  text-transform: capitalize;
+  color: red;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.item .title:hover{
+  white-space: wrap;
+  text-overflow: unset;
+  width: 50%;
+}
+
+.item .qtd{
+  color: #757575;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.item button {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: purple;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+.item button:hover {
+  background-color: #680068;
+  color: #ffffffb0;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  margin-bottom: 26px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #e5e5e5;
+  border: 2px solid #c2c2c2;
+  transition: 0.5s ease-in-out;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #051522;
+  border: none;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -1,0 +1,36 @@
+https://www.tabnews.com.br/icaroharry/27-ideias-de-projetos-web-de-junior-ate-senior
+
+https://robertotcestari.notion.site/27-projetos-para-ir-de-jr-a-senior-em-programa-o-web-dc10450652764cac9960bb8a449e4409
+
+*junio
+-[X]pagina de links(começou 13/07 terminou 14/07)
+-[X]pagina de FAQ (começou 14/07 terminou 19/07)
+-[X]pomodor timer (começou 19/07 terminou 22/07)
+-[ ]seu porfolio
+-[ ]clones de interfaces
+-[ ]sites profissionais
+-[ ]automação de cliques
+-[X]Lista de comprar (começou 22/07 terminou 28/07 embora passei apenas 3 dias fazendo)
+-[ ]tela de login/cadastro
+
+*Pleno
+-[ ]Fazer sua propria lib
+-[ ]Jogos Simples
+-[ ]Cardápio online para restaurante
+-[ ]Video programáticos
+-[ ]reconhecimento de imagem
+-[ ]clone do chatgpt
+-[ ]Lista, buca,ordenação e paginação
+-[ ]seu próprio blog
+-[ ]E-commerce
+-[ ]Fomularios complexos
+
+*Senior
+-[ ]componentes mais complexos como calendario/date picker
+-[ ]Upload de arquivos grandes
+-[ ]editor de videos na web
+-[ ]visualização de arquivos enormes
+-[ ]WYSIWYG / markdown editor
+-[ ]clone de plataformas complexas
+-[ ]sistemas fullstack completos
+-[ ]sistemas fullstack com filas
